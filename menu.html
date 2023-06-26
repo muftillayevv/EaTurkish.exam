@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/menu.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <div class="header__navbar">
+          <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+              <div class="web__logo">
+                <a class="navbar-brand" href="./index.html">
+                  <img src="./Images/EaTurkish_Logo.svg" alt="" />
+                </a>
+              </div>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse gap-4"
+                id="navbarSupportedContent"
+              >
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./menu.html"
+                      >Menu</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./news.html">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      aria-current="page"
+                      href="./contact__us.html"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./about.html"
+                      >About Us</a
+                    >
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <button
+                    class="btn"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                  >
+                    <a href="#">Log In</a>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="staticBackdrop"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Log In Account
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <label name="username"
+                      >Username<input
+                        name="username"
+                        type="text"
+                        class="form-control"
+                        placeholder="blvck_mft"
+                        aria-label="Username"
+                        aria-describedby="basic-addon1"
+                        required
+                    /></label>
+                    <label name="password"
+                      >Password
+                      <input
+                        name="password"
+                        type="password"
+                        class="form-control"
+                        placeholder="Password"
+                        aria-label="Recipient's username"
+                        aria-describedby="basic-addon2"
+                        required
+                      />
+                    </label>
+                  </div>
+                  <div class="modal-footer d-flex">
+                    <button class="form-control">
+                      <a href="">Log In</a>
+                    </button>
+                    <button class="form-control">
+                      <a href="">Forgot Your Password?</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="menu">
+        <div class="menu__container">
+         
+
+          <div class="menu__box">
+            <div class="d-flex align-items-start">
+              <div
+                class="nav flex-column nav-pills me-3"
+                id="v-pills-tab"
+                role="tablist"
+                aria-orientation="vertical"
+              >
+              <div class="nav__heading">
+                <h2>Our Regular Menu Pack</h2>
+              </div>
+                <button
+                  class="nav-link active"
+                  id="v-pills-home-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-home"
+                  aria-selected="true"
+                >
+                  All
+                </button>
+                <button
+                  class="nav-link"
+                  id="v-pills-profile-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-profile"
+                  aria-selected="false"
+                >
+                  Shawarma
+                </button>
+                <button
+                  class="nav-link"
+                  id="v-pills-messages-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-messages"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-messages"
+                  aria-selected="false"
+                >
+                  Kebab
+                </button>
+                <button
+                  class="nav-link"
+                  id="v-pills-settings-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-settings"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-settings"
+                  aria-selected="false"
+                >
+                  Doner
+                </button>
+                 <button
+                  class="nav-link"
+                  id="v-pills-settings-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-settings"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-settings"
+                  aria-selected="false"
+                >
+                  Burger
+                </button> <button
+                  class="nav-link"
+                  id="v-pills-settings-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-settings"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-settings"
+                  aria-selected="false"
+                >
+                  Drinks
+                </button>
+                <button
+                  class="nav-link"
+                  id="v-pills-settings-dessert"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-settings"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-settings"
+                  aria-selected="false"
+                >
+                  Dessert
+                </button>
+              </div>
+              <div class="tab-content" id="v-pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="v-pills-home"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-home-tab"
+                  tabindex="0"
+                >
+                     <img src="./Images/klipartz 1 (1).svg" alt="">
+                   <h3>Barbecue Shish kebab Shashlik Skewer</h3>
+                   <h5>$12.00</h5>
+                </div>
+                  <div
+                  class="tab-pane fade show active"
+                  id="v-pills-home"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-home-tab"
+                  tabindex="0"
+                >
+                     <img src="./Images/klipartz 1 (1).svg" alt="">
+                   <h3>Barbecue Shish kebab Shashlik Skewer</h3>
+                   <h5>$12.00</h5>
+                </div>  <div
+                  class="tab-pane fade show active"
+                  id="v-pills-home"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-home-tab"
+                  tabindex="0"
+                >
+                     <img src="./Images/klipartz 1 (1).svg" alt="">
+                   <h3>Barbecue Shish kebab Shashlik Skewer</h3>
+                   <h5>$12.00</h5>
+                </div>
+                 <div
+                  class="tab-pane fade show active"
+                  id="v-pills-settings-dessert"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-home-tab"
+                  tabindex="0"
+                >
+                    <img src="./Images/klipartz 1 (2).svg" alt="">
+                   <h3>Barbecue Shish kebab Shashlik Skewer</h3>
+                   <h5>$12.00</h5>
+                </div> <div
+                  class="tab-pane fade show active"
+                  id="v-pills-home"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-home-tab"
+                  tabindex="0"
+                >
+                   <img src="./Images/klipartz 1 (1).svg" alt="">
+                   <h3>Barbecue Shish kebab Shashlik Skewer</h3>
+                   <h5>$12.00</h5>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-settings-dessert"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-profile-tab"
+                  tabindex="0"
+                >
+                  <img src="./Images/klipartz 1 (1).svg" alt="">
+                   <h3>Barbecue Shish kebab Shashlik Skewer</h3>
+                   <h5>$12.00</h5>
+                </div>
+                 <div
+                  class="tab-pane fade"
+                  id="v-pills-settings-dessert"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-profile-tab"
+                  tabindex="0"
+                >
+                  <img src="./Images/klipartz 1 (1).svg" alt="">
+                   <h3>Barbecue Shish kebab Shashlik Skewer</h3>
+                   <h5>$12.00</h5>
+                </div> <div
+                  class="tab-pane fade"
+                  id="v-pills-settings-dessert"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-profile-tab"
+                  tabindex="0"
+                >
+                  <img src="./Images/klipartz 1 (1).svg" alt="">
+                   <h3>Barbecue Shish kebab Shashlik Skewer</h3>
+                   <h5>$12.00</h5>
+                </div>
+                               <div
+                  class="tab-pane fade"
+                  id="v-pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-profile-tab"
+                  tabindex="0"
+                >
+                  <img src="./Images/klipartz 1 (2).svg" alt="">
+                   <h3>Barbecue Shish kebab Shashlik Skewer</h3>
+                   <h5>$12.00</h5>
+                </div>
+                               <div
+                  class="tab-pane fade"
+                  id="v-pills-settings-dessert"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-profile-tab"
+                  tabindex="0"
+                >
+                  <img src="./Images/klipartz 1.svg" alt="">
+                   <h3>Barbecue Shish kebab Shashlik Skewer</h3>
+                   <h5>$12.00</h5>
+                </div>
+               
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-messages"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-messages-tab"
+                  tabindex="0"
+                >
+                  <img src="./Images/klipartz 1 (1).svg" alt="">
+                   <h3>Barbecue Shish kebab Shashlik Skewer</h3>
+                   <h5>$12.00</h5>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-settings"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-settings-tab"
+                  tabindex="0"
+                >
+                  <img src="./Images/klipartz 1 (2).svg" alt="">
+                   <h3>Barbecue Shish kebab Shashlik Skewer</h3>
+                   <h5>$12.00</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="social">
+        <div class="social__container">
+          <div class="social__title">
+            <div class="social__title--heading">
+              <p><strong>Instagram</strong></p>
+              <img src="./Images/spoon_red.svg" alt="" />
+              <h2>Photo Gallery</h2>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
+              mattis ipsum turpis elit elit scelerisque egestas mu.
+            </p>
+            <button>View More</button>
+          </div>
+          <div class="slider">
+            <div class="slide-track">
+              <div class="slide">
+                <img src="/Images/3.png" height="447" width="230" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/Images/1.png" height="447" width="230" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/Images/3.png" height="447" width="230" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/Images/1.png" height="447" width="230" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/Images/3.png" height="447" width="230" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/Images/1.png" height="447" width="230" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/Images/3.png" height="447" width="230" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/Images/1.png" height="447" width="230" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/Images/3.png" height="447" width="230" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/Images/1.png" height="447" width="230" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/Images/3.png" height="447" width="230" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/Images/1.png" height="447" width="230" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/Images/3.png" height="447" width="230" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/Images/1.png" height="447" width="230" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="subscribe">
+        <div class="subscribe__title">
+          <p>
+            <strong>Newsteller</strong>
+          </p>
+          <h3>Subscribe to Our Newsletter</h3>
+          <h6>And never miss latest Updates!</h6>
+        </div>
+        <div class="subscribe__register">
+          <input type="email" placeholder="Emali Address" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="container text-center">
+          <div class="row align-items-start">
+            <div class="col">
+              <li>
+                <h3>Contact Us</h3>
+                <h6>9 W 53rd St, London, NY 10019, UK</h6>
+                <p>
+                  +1 212-344-1230 <br />
+                  +1 212-555-1230
+                </p>
+              </li>
+            </div>
+            <div class="col">
+              <li>
+                <img src="./Images/EaTurkish_Logo.svg" alt="" />
+                <p>
+                  "The best way to find yourself is to lose yourself in the
+                  service of others.”
+                </p>
+                <div class="footer__social">
+                  <img
+                    src="./Images/u_facebook-f.svg"
+                    alt=""
+                    style="cursor: pointer"
+                  />
+                  <img
+                    src="./Images/u_instagram.svg"
+                    alt=""
+                    style="cursor: pointer"
+                  />
+                  <img
+                    src="./Images/u_twitter-alt.svg"
+                    alt=""
+                    style="cursor: pointer"
+                  />
+                </div>
+                <p class="footer__passage">
+                  2022 Pop online. All Rights reserved.
+                </p>
+              </li>
+            </div>
+            <div class="col">
+              <li>
+                <h3>Working Hours</h3>
+                <p>
+                  Monday-Friday: <br />
+                  08:00 am -12:00 am <br />
+                  <br />
+                  Saturday-Sunday: <br />
+                  07:00am -11:00 pm
+                </p>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>

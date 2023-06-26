@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/contact__us.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <div class="header__navbar">
+          <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+              <div class="web__logo">
+                <a class="navbar-brand" href="./index.html">
+                  <img src="./Images/EaTurkish_Logo.svg" alt="" />
+                </a>
+              </div>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse gap-4"
+                id="navbarSupportedContent"
+              >
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./menu.html"
+                      >Menu</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./news.html">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      aria-current="page"
+                      href="./contact__us.html"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./about.html"
+                      >About Us</a
+                    >
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <button
+                    class="btn"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                  >
+                    <a href="#">Log In</a>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="staticBackdrop"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Log In Account
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <label name="username"
+                      >Username<input
+                        name="username"
+                        type="text"
+                        class="form-control"
+                        placeholder="blvck_mft"
+                        aria-label="Username"
+                        aria-describedby="basic-addon1"
+                        required
+                    /></label>
+                    <label name="password"
+                      >Password
+                      <input
+                        name="password"
+                        type="password"
+                        class="form-control"
+                        placeholder="Password"
+                        aria-label="Recipient's username"
+                        aria-describedby="basic-addon2"
+                        required
+                      />
+                    </label>
+                  </div>
+                  <div class="modal-footer d-flex">
+                    <button class="form-control">
+                      <a href="">Log In</a>
+                    </button>
+                    <button class="form-control">
+                      <a href="">Forgot Your Password?</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact__us">
+        <div class="news__breadcrumb">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active extra" aria-current="page">
+                Home
+              </li>
+              <li class="breadcrumb-item"><a href="#">Contact Us</a></li>
+            </ol>
+          </nav>
+        </div>
+        <div class="news__title text-center">
+          <h3>Contact Us</h3>
+          <img src="./Images/spoon_red.svg" alt="" />
+        </div>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <div class="column">
+                <div class="column__image">
+                  <img
+                    src="./Images/phone.svg"
+                    alt=""
+                    width="45"
+                    height="45"
+                  />
+                </div>
+                <div class="column__text">
+                  <h6>Phone Number</h6>
+                  <p>eaturkish</p>
+                </div>
+              </div>
+              <div class="column">
+                <div class="column__image">
+                  <img
+                    src="./Images/mail.svg"
+                    alt=""
+                    width="45"
+                    height="45"
+                  />
+                </div>
+                <div class="column__text">
+                  <h6>Email Address</h6>
+                  <p>eaturkish</p>
+                </div>
+              </div>
+              <div class="column">
+                <div class="column__image">
+                  <img
+                    src="./Images/004-instagram.svg"
+                    alt=""
+                    width="45"
+                    height="45"
+                  />
+                </div>
+                <div class="column__text">
+                  <h6>Instagram</h6>
+                  <p>eaturkish</p>
+                </div>
+              </div>
+              <div class="column">
+                <div class="column__image">
+                  <img
+                    src="./Images/u_twitter-alt.svg"
+                    alt=""
+                    width="45"
+                    height="45"
+                  />
+                </div>
+                <div class="column__text">
+                  <h6>Twitter</h6>
+                  <p>eaturkish</p>
+                </div>
+              </div>
+              <div class="column">
+                <div class="column__image">
+                  <img
+                    src="./Images/u_facebook-f.svg"
+                    alt=""
+                    width="45"
+                    height="45"
+                  />
+                </div>
+                <div class="column__text">
+                  <h6>Facebook</h6>
+                  <p>eaturkish</p>
+                </div>
+              </div>
+            </div>
+            <div class="col intro">
+              <div class="col__title">
+                <h3>Send Messege</h3>
+                <p>
+                  If you have any questions, you can send us an SMS or contact
+                  us by phone you can also contact us via social networks.
+                </p>
+              </div>
+              <div class="col__register">
+                <form>
+                  <input type="text" placeholder="Your Name"/>
+                  <input type="email" placeholder="Email Address" required/>
+                  <input type="tel" placeholder="Phone Number"/>
+                  <input type="text" placeholder="Subject"/>
+                  <input class="last__input" type="text" placeholder="Message"/>
+                </form>
+              </div>
+              <div class="col__btn">
+                <button type="submit">Send Message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="card__container">
+        <div class="card__title">
+          <h3 class="text-center">
+            Find us by card
+          </h3>
+        </div>
+        <div class="map__container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3129.9139582527337!2d69.24769008279131!3d41.315797047507736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b40d847941d%3A0x5765a18b352df71e!2sTashkent%20City%20Park!5e1!3m2!1sen!2s!4v1687791020349!5m2!1sen!2s" width="1250" height="603" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="subscribe">
+        <div class="subscribe__title">
+          <p>
+            <strong>Newsteller</strong>
+          </p>
+          <h3>Subscribe to Our Newsletter</h3>
+          <h6>And never miss latest Updates!</h6>
+        </div>
+        <div class="subscribe__register">
+          <input type="email" placeholder="Emali Address" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="container text-center">
+          <div class="row align-items-start">
+            <div class="col">
+              <li>
+                <h3>Contact Us</h3>
+                <h6>9 W 53rd St, London, NY 10019, UK</h6>
+                <p>
+                  +1 212-344-1230 <br />
+                  +1 212-555-1230
+                </p>
+              </li>
+            </div>
+            <div class="col">
+              <li>
+                <img src="./Images/EaTurkish_Logo.svg" alt="" />
+                <p>
+                  "The best way to find yourself is to lose yourself in the
+                  service of others.”
+                </p>
+                <div class="footer__social">
+                  <img
+                    src="./Images/u_facebook-f.svg"
+                    alt=""
+                    style="cursor: pointer"
+                  />
+                  <img
+                    src="./Images/u_instagram.svg"
+                    alt=""
+                    style="cursor: pointer"
+                  />
+                  <img
+                    src="./Images/u_twitter-alt.svg"
+                    alt=""
+                    style="cursor: pointer"
+                  />
+                </div>
+                <p class="footer__passage">
+                  2022 Pop online. All Rights reserved.
+                </p>
+              </li>
+            </div>
+            <div class="col">
+              <li>
+                <h3>Working Hours</h3>
+                <p>
+                  Monday-Friday: <br />
+                  08:00 am -12:00 am <br />
+                  <br />
+                  Saturday-Sunday: <br />
+                  07:00am -11:00 pm
+                </p>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>

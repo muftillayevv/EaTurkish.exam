@@ -1,0 +1,13 @@
+
+
+@mixin btn($width,$height,$bg-color,$border, $radius: 0 ,) {
+  width: $width;
+  height: $height;
+  background-color: $bg-color;
+  border: $border;
+
+  @if $radius != 0 {
+    border-radius: $radius;
+  }
+}
+ 
